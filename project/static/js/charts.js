@@ -1,4 +1,4 @@
-const getCharts = () => {
+export const getCharts = () => {
     try {
     fetch('/api/data')
     .then((res) => {
@@ -9,6 +9,5 @@ const getCharts = () => {
     } catch (error) {
         console.log(error)
     }
-
 }
 
