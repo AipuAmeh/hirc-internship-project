@@ -27,6 +27,7 @@ padding: 1em;
 /* Home.html */
 .site-title {
     margin-top: 4rem;
+    color: var(--deepBurgundy);
 }
 
 .project-desc {
