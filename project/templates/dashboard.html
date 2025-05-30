@@ -2,27 +2,9 @@
 
 {% block content %}
 
-<h2>This is the dashboard page</h2>
+<h1 align="center" class="site-title">IntelliScope</h1>
 <div class="container-fluid">
 
-  <table>
-    <thead>
-      <tr>
-        {% for col in records[0].keys() %}
-          <th>{{ col }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in records %}
-        <tr>
-          {% for value in row.values() %}
-            <td>{{ value }}</td>
-          {% endfor %}
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-
+<button type="button" onClick="getCharts()">Click me for data</button>
 </div>
 {% endblock %}
