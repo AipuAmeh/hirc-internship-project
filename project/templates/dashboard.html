@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<h2>This is the dashboard page</h2>
+<div class="container-fluid">
+
+  <table>
+    <thead>
+      <tr>
+        {% for col in records[0].keys() %}
+          <th>{{ col }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in records %}
+        <tr>
+          {% for value in row.values() %}
+            <td>{{ value }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>
+{% endblock %}
