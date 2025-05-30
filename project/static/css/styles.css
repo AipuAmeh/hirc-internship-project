@@ -1,0 +1,65 @@
+:root {
+    --deepBurgundy: #813F5C;
+    --watermelonGreen: #71B54A;
+    --summerPink: #CA3C6A;
+    --twinkleBlue: #03A9C9;
+    --pearl: #EDF0EF;
+    --gray: #605A5C;
+
+}
+/* Base.html */
+footer {
+padding: 1em;
+  width: 100%;
+  margin-top: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--deepBurgundy);
+  color: white;
+  text-align: center;
+}
+
+.nav-item{
+    font-size: 1em;
+}
+/* Home.html */
+.site-title {
+    margin-top: 4rem;
+}
+
+.project-desc {
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.project-list {
+    margin-top: 4rem;
+}
+
+.marker-box {
+    width: 7%;
+    height: 50%;
+    padding: 1.5rem;
+}
+
+#box-1 {
+    background-color: var(--watermelonGreen);
+}
+
+#box-2 {
+    background-color: var(--summerPink);
+}
+
+#box-3 {
+    background-color: var(--twinkleBlue);
+}
+
+.marker-text {
+    line-height: 2.5;
+}
+
+li {
+    font-size: 1.5rem;
+}
