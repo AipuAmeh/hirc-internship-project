@@ -11,3 +11,13 @@ class Charts:
         ;
     """
         return query
+    
+    def pie_chart_query(self):
+        query = """
+        SELECT RSCH_TYPE AS research_type, COUNT(RSCH_TYPE) AS count
+        FROM data
+        WHERE RSCH_TYPE IS NOT NULL
+        GROUP BY RSCH_TYPE
+        ;
+        """
+        return query

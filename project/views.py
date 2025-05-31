@@ -27,6 +27,8 @@ def get_csv_data():
 
     if chart_type == 'pm_vs_category':
         query = Charts().bar_chart_query()
+    elif chart_type == 'rsch_category':
+        query = Charts().pie_chart_query()
     else:
         print('no chart specified')
         return jsonify({'error': 'Invalid chart_type specified'}), 400
