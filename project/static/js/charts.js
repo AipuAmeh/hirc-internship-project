@@ -1,4 +1,4 @@
-export const getCharts = () => {
+const getCharts = () => {
     try {
     fetch('/api/data')
     .then((res) => {
