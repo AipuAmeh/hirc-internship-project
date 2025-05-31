@@ -2,14 +2,18 @@
 const barChart = (xArray, yArray) => {
   const chartId = document.querySelector("#bar-chart");
   chartId.innerHTML = "";
-  const layout = { title: `A Project Manager's Task Load` };
+  const layout = { 
+    title: { text: `A Project Manager's Task Load`},
+    xaxis: { title: { text: 'Project Managers'}},
+    yaxis: { title: { text: '# of Research Categories'}},
+}
   const data = [
     {
       x: xArray,
       y: yArray,
       type: "bar",
       orientation: "v",
-      marker: { color: "rgba(0,0,255)" },
+      marker: { color: "#03A9C9" },
     },
   ];
   Plotly.newPlot(chartId, data, layout);
@@ -18,12 +22,14 @@ const barChart = (xArray, yArray) => {
 const pieChart = (xArray, yArray) => {
   const chartId = document.querySelector("#pie-chart");
   chartId.innerHTML = "";
-  const layout = { title: "Research Types" };
+    const layout = { 
+    title: { text: 'Research Types'}}
   const data = [
     {
       labels: xArray,
       values: yArray,
       type: "pie",
+      marker: { colors: ['#71B54A', '#CA3C6A', '#03A9C9' ]},
     },
   ];
   Plotly.newPlot(chartId, data, layout);
